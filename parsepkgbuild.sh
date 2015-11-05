@@ -1,5 +1,6 @@
 #!/bin/bash -r
 
+source /etc/makepkg.conf
 source $PKGBUILD_FILENAME
 
 # ensure $pkgname, $pkgver, and $pkgrel variables were found
