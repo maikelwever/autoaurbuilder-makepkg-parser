@@ -75,6 +75,26 @@ if [ -n "$conflicts" ]; then
 	for i in "${conflicts[@]}"; do echo $i; done
 	echo ""
 fi
+if [ -n "$depends_x86_64" ]; then
+	echo "%DEPENDS_X86_64%"
+	for i in "${depends_x86_64[@]}"; do echo $i; done
+	echo ""
+fi
+if [ -n "$makedepends_x86_64" ]; then
+	echo "%MAKEDEPENDS_X86_64%"
+	for i in "${makedepends_x86_64[@]}"; do echo $i; done
+	echo ""
+fi
+if [ -n "$optdepends_x86_64" ]; then
+	echo "%OPTDEPENDS_X86_64%"
+	for i in "${optdepends_x86_64[@]}"; do echo $i; done
+	echo ""
+fi
+if [ -n "$conflicts_x86_64" ]; then
+	echo "%CONFLICTS_X86_64%"
+	for i in "${conflicts_x86_64[@]}"; do echo $i; done
+	echo ""
+fi
 if [ -n "$provides" ]; then
 	echo "%PROVIDES%"
 	for i in "${provides[@]}"; do echo $i; done
